@@ -7,7 +7,6 @@ create virtual environment
 python -m venv venv
 Then activate that environment
 
-venv\Scripts\activate
 Then install Django in that environment
 
 pip install django
