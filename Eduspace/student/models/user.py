@@ -32,9 +32,10 @@ class user_login(models.Model):
 
 
 class user(models.Model):
-    profile_img = models.ImageField(upload_to='user/profile_img/')
+    profile_img = models.ImageField(upload_to='profile_img')
     mobile = models.IntegerField(max_length=12)
-    emailid = models.ForeignKey(user_login, on_delete=models.CASCADE)
+    emailid = models.CharField(max_length=50)
+    rollno=models.CharField(max_length=50)
     def __str__(self):
         return self.emailid
 
